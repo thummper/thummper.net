@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: "Roboto", serif; }
+
+html {
+  height: 100%;
+  min-width: 420px; }
+
+body {
+  height: 100%; }
+
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box; }
+  .logoWrapper .slogan {
+    font-family: "Lato", serif;
+    font-size: 18px;
+    padding: 10px; }
+
+.ignoreText {
+  display: inline-block;
+  width: 0; }
+
+nav {
+  padding: 0 15px;
+  border-top: #F1592A solid 2px;
+  border-bottom: #F1592A solid 2px; }
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Lato", serif;
+  font-size: 18px; }
+
+.navMenu, .navDropdown {
+  list-style-type: none; }
+
+.navMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .navMenu li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px; }
+  .navMenu li.subitem a {
+    padding: 20px; }
+  .navMenu .navToggle {
+    order: 1;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 25px; }
+  .navMenu .navItem.hasDropdown a svg {
+    margin: 0 5px; }
+  .navMenu .navDropdown.navDropdown-active {
+    display: block; }
+  .navMenu .navDropdown {
+    background: #f2f2f2;
+    border-radius: 3px; }
+  .navMenu .subitem a {
+    padding: 10px 15px; }
+
+.navItem {
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
+  text-align: center;
+  padding: 10px; }
+  .navItem a:hover {
+    background: #c2c2c2; }
+
+.navMenu.active .navItem {
+  display: block; }
+
+.navDropdown {
+  display: none; }
+
+.navItem {
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none; }
+
+.splashImage {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.careersSplash {
+  width: 100%;
+  background-size: cover; }
+  .careersSplash .splashWrapper {
+    margin: auto auto;
+    margin-left: 5%; }
+
+.splashWrapper {
+  width: 800px;
+  margin: auto auto;
+  margin-right: 5%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column; }
+
+.splashTextWrapper {
+  background: rgba(83, 75, 73, 0.65); }
+
+.splashTextMain, .splashTextSub {
+  padding: 18px; }
+
+.splashTextMain {
+  color: white;
+  font-family: "Lato", serif;
+  font-size: 38px; }
+
+.splashTextSub {
+  font-size: 28px;
+  color: white;
+  font-family: "Lato", serif;
+  font-weight: normal; }
+
+.splashButton {
+  cursor: pointer;
+  font-family: "Lato", serif;
+  font-size: 28px;
+  color: white;
+  background: #534b49;
+  align-self: flex-start;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: bold; }
+  .splashButton i {
+    font-size: 32px; }
+  .splashButton:hover {
+    background: #383231; }
+
+.splashScrollPrompt {
+  position: relative;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 4%;
+  color: white;
+  font-size: 48px;
+  background: #534b49;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s; }
+  .splashScrollPrompt:hover {
+    top: -10px;
+    background: #383231; }
+
+.pageWrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+
+.textSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Lato", serif;
+  font-size: 22px;
+  width: 90%;
+  margin: 64px auto;
+  box-sizing: border-box;
+  border-radius: 4px; }
+  .textSection ul {
+    list-style-position: inside;
+    margin: 16px 0; }
+    .textSection ul li {
+      margin: 12px auto; }
+  .textSection .centeredText {
+    margin: 12px auto;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Lato", serif;
+    font-size: 22px; }
+  .textSection .splashButton {
+    margin: 40px auto; }
+
+.serviceCards {
+  width: 100%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .serviceCards .serviceCard {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .serviceCards .serviceCard .serviceTitle {
+      font-family: "Lato", serif;
+      font-size: 32px;
+      color: #F1592A;
+      text-align: center; }
+    .serviceCards .serviceCard .serviceText {
+      width: 70%;
+      margin: 10px auto;
+      text-align: center; }
+
+.sectionTitleWrapper {
+  margin: 40px auto;
+  margin-bottom: 12px; }
+  .sectionTitleWrapper h1 {
+    font-family: "Lato", serif;
+    font-size: 46px;
+    color: #F1592A; }
+
+.primeLink {
+  color: #F1592A;
+  text-decoration: none;
+  border-bottom: 4px solid #534B49;
+  transition: all 0.2s; }
+  .primeLink:hover {
+    color: #534B49; }
+
+.postWrapper {
+  display: flex; }
+
+.postWrapperLong {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px; }
+
+.smallPost {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  margin: 6px 0; }
+  .smallPost:nth-child(2) {
+    border-top: solid 2px #534B49;
+    border-bottom: solid 2px #534B49; }
+  .smallPost .postTitle {
+    font-size: 32px;
+    font-family: "Lato";
+    color: #F1592A;
+    font-weight: bold; }
+  .smallPost .postDate {
+    padding: 6px 0; }
+  .smallPost .postContent {
+    padding: 6px 0; }
+  .smallPost .postButton {
+    margin: 0 0;
+    font-size: 18px;
+    font-weight: 400; }
+
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: #534B49; }
+
+@media all and (max-width: 960px) {
+  .splashWrapper {
+    width: 420px; }
+  .serviceCards {
+    margin: 12px auto; }
+  .serviceCard {
+    margin: 40px auto; } }
+
+@media all and (min-width: 960px) {
+  nav .navToggle {
+    display: none; }
+  nav .navMenu {
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: nowrap;
+    background: none; }
+  nav .navItem {
+    width: auto;
+    order: 1;
+    position: relative;
+    display: block !important; }
+  nav .navDropdown-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #111; } }

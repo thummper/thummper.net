@@ -1,0 +1,178 @@
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+
+.phoneWrapper{
+	height: 50%;
+}
+.infoWrapper{
+ 
+ display: flex;
+	
+}
+
+.contentWrapper {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 480px;
+}
+
+
+
+.phone {
+	display: flex;
+	flex-direction: column;
+	width: 260px;
+	margin: 0 auto;
+	height: 100%;
+	border: solid 3px #3f51b5;
+	border-radius: 4px;
+}
+
+
+
+.tabs{
+	background-color: #3f51b5;
+	color: white;
+	width: 100%;
+	height:  50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}
+
+.tab{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-grow: 1;
+	flex-basis: 0;
+	height: 100%;
+	transition: all 0.3s;
+	cursor: pointer;
+	font-size: 14px;
+	
+}
+
+.tab:hover{
+	background-color: #303f9f;
+}
+.activeTab{
+	background-color: #303f9f;
+}
+.phoneTab{
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+
+
+
+.spinner{
+	margin: auto auto;
+	width: 250px;
+	height: 250px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.info{
+	text-align: center;
+	margin-top: 5px;
+	border: solid 2px #3f51b5;
+	border-radius: 3px;
+	width: 260px;
+	margin: 0 auto;
+	display: none;
+	min-height: 120px;
+	justify-content: center;
+	align-items: center;
+}
+
+.def {
+	display: flex;
+}
+.tab-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 5%;
+	margin-bottom: 8%;
+}
+.spinnerStick {
+	width: 20px;
+	height: 65%;
+	background-color: grey;
+	animation:spin 4s linear infinite;
+}
+.button {
+	margin-top: 8px;
+	display: block;
+	padding: 9px 9px;
+	background-color: #3f51b5;
+	border-radius: 4px;
+	color: white;	
+	cursor: pointer;
+}
+
+.button:hover{
+	background-color: #303f9f;
+}
+
+@media all and (orientation: landscape) {
+	.contentWrapper{
+		height: 100%;
+		width: 100%;
+		min-height: 300px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.phoneWrapper{
+		height: 100%;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.infoWrapper{
+		height: 100%;
+		width: 50%;
+	}
+	.phone{
+		height: 90%;
+		margin: auto auto;
+	}
+	.info {
+		margin: auto 0;
+	}
+
+
+
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

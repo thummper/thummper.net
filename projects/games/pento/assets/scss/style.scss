@@ -1,0 +1,159 @@
+* {
+    border: 0;
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameWrapper {
+    width: 960px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .game{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .canvasWrapper, .menuWrapper{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    #mainMenu{
+        background: white;
+    }
+    canvas{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+#mainMenu {
+    align-items: center;
+    .titleImage {
+        margin-top: 10%;
+        width: 80%;
+    }
+    $buttonBG: rgba(255, 165, 0, 0.2);
+    button{
+        font-family: Arial;
+        margin-top: 8%;
+        padding: 12px;
+        color: black;
+        background: $buttonBG;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+            background: darken($buttonBG, 15);
+        }
+    }
+}
+
+#gameMenu{
+    pointer-events: none;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    div{
+        background: white;
+        width: 100%;
+        height: 100%;
+        padding: 4px;
+        box-sizing: border-box;
+    }
+}
+
+#levelWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 4%;
+    margin-right: 4%;
+    height: 280px;
+    background: rgba(#f4f4f4, 0.6);
+    padding: 3px;
+
+
+    .levelIndicator{
+        width: 1.8em;
+        height: 1.8em;
+
+    }
+
+
+}
+
+.draggable {
+    max-width: 500px;
+    display: none;
+    background: #f2f2f2;
+    position: absolute;
+    z-index: 9;
+    border-radius: 4px;
+  }
+  .window-bottom{
+    text-align: left;
+    padding: 10px;
+  }
+  .window-top{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2196F3;
+  }
+  .window-title{
+    align-self: center;
+    margin-right: 20px;
+    color: white;
+    font-size: 16px;
+  }
+  .window-close{
+    transition: all 0.15s;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .window-close:hover{
+    background: blue;
+  }
+
+

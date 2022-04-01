@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "Manics";
+    src: url("../font/helv.svg") format('svg'),
+    url("../font/helv.woff") format('woff');
+}
+
+$newsWidth: 560px;
+
+* {
+    font-family: "Manics";
+    margin: 0;
+    border: 0;
+    padding: 0;
+  
+}
+
+html{
+    height: 100%;
+  
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.splash {
+    height: 100vh;
+    background-image: url("../image/manics1.jpg");
+    background-position: center;
+    background-size: cover;
+  
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.splashTitle{
+    transition: all 0.2s;
+    margin-top: 10%;
+    margin-bottom: auto;
+    position: relative;
+}
+.splashBG{
+    border-radius: 4px;
+    position: absolute;
+    background: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    
+}
+.splashText {
+    transition: all 0.3s;
+    position: relative;
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+    padding: 4px 8px;
+    z-index: 2;
+}
+
+main {
+
+    background: #f2f2f2;
+}
+
+@media screen and(max-width: 850px){
+    .splashText{
+        font-size: 40px;
+    }
+    .splashTitle{
+        margin-top: 100px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px){
+
+    nav a:not(:first-child){
+        display: none;
+    }
+    nav a.icon{
+        display: block;
+        float: right;
+    }
+
+
+    nav .responsive{
+        position: relative;
+    }
+    nav .responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav .responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
+
+
+nav{
+    position: sticky;
+    top: 0;
+    background: black;
+    z-index: 1000;
+
+
+   
+    a{
+        cursor: pointer;
+        transition: 0.2s all;
+        padding: 8px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        display: block;
+        float: left;
+        text-align: center;
+        &:hover{
+            background: lighten(black, 20);
+        }
+    }
+    .icon{
+        display: none;
+    }
+}
+
+.section{
+    
+    margin: 48px auto;
+    width: 98%;
+    padding: 2px;
+
+    .sectionTitle{
+
+        width: 100%;
+
+        .text{
+            font-size: 32px;
+           
+
+        }
+
+        .line{
+            width: 100%;
+            height: 4px;
+            background: black;
+            border-radius: 4px;
+        }
+
+    }
+
+}
+
+.musicGrid, .newsGrid {
+    margin: 24px 0;
+
+}
+
+@media screen and(max-width: 1490px){
+    .musicGrid{
+        margin: 24px auto;
+    }
+}
+
+
+@media screen and(max-width: 1290px){
+    .musicGrid, .newsGrid{
+        margin: 24px auto;
+    }
+}
+
+.musicItem {
+    margin: 12px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 4px;
+
+    &:hover{
+        .musicHover{
+            top: 0;
+           visibility: visible;
+        }
+        margin-top: -2px;
+    }
+
+}
+
+.musicBackground, .musicHover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.musicHover{
+    position: absolute;
+    top: 300px;
+    visibility: hidden;
+    transition: all 0.2s;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: black;
+    opacity: 0.8;
+    align-self: center;
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.news{
+    cursor: pointer;
+    margin: 5px 0;
+}
+.news{
+    display: block;
+    text-decoration: none;
+    width: 600px;
+    overflow: hidden;
+}
+
+@media screen and(max-width: 600px){
+    .news{
+        width: 300px;
+    }
+
+    .musicGrid, .newsGrid{
+        margin: 24px auto;
+    }
+
+}
+.newsImage{
+    width: 100%;
+    height: 325px;
+    background-size: cover;
+}
+
+.newsText{
+    color: white;
+    position: relative;
+    min-height: 100px;
+    .newsTextBG {
+        top: 0;
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .newsTextBG{
+        position: absolute;
+        width: 100%;
+        z-index: 9;
+        height: 100%;
+        background: rgb(18,18,18);
+        
+    
+    }
+}
+
+    .newsTextInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .date, .title, .desc{
+            font-size: 20px;
+        text-align: center;
+        padding: 5px 9px;
+        z-index: 11;
+        }
+        .date, .desc{
+            padding: 8px 9px;
+            font-size: 15px;
+            color: darken(white, 20);
+        }
+    }
+
+footer{
+    margin-top: auto;
+    height: 30px;
+    width: 100%;
+    background: black;
+
+}
+

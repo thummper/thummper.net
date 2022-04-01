@@ -1,0 +1,6 @@
+[16-Apr-2018 08:32:28 America/New_York] PHP Warning:  include(../webAnalytics.php): failed to open stream: No such file or directory in /home/perplfzg/thummper.net/Projects/Misc/ColourGen/index.php on line 4
+[16-Apr-2018 08:32:28 America/New_York] PHP Warning:  include(../webAnalytics.php): failed to open stream: No such file or directory in /home/perplfzg/thummper.net/Projects/Misc/ColourGen/index.php on line 4
+[16-Apr-2018 08:32:28 America/New_York] PHP Warning:  include(): Failed opening '../webAnalytics.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/perplfzg/thummper.net/Projects/Misc/ColourGen/index.php on line 4
+[16-Apr-2018 11:59:44 America/New_York] PHP Warning:  include(../webAnalytics.php): failed to open stream: No such file or directory in /home/perplfzg/thummper.net/Projects/Misc/ColourGen/index.php on line 4
+[16-Apr-2018 11:59:44 America/New_York] PHP Warning:  include(../webAnalytics.php): failed to open stream: No such file or directory in /home/perplfzg/thummper.net/Projects/Misc/ColourGen/index.php on line 4
+[16-Apr-2018 11:59:44 America/New_York] PHP Warning:  include(): Failed opening '../webAnalytics.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/perplfzg/thummper.net/Projects/Misc/ColourGen/index.php on line 4

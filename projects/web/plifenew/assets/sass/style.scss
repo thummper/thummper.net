@@ -1,0 +1,474 @@
+$plifeBlack: #534B49;
+
+
+$plifeSub: #f2f2f2;
+$plifeHover: #c2c2c2;
+$plifeOrange: #F1592A;
+
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+html {
+    height: 100%;
+    min-width: 420px;
+}
+body{
+    height: 100%;
+}
+
+
+.logoWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px;
+    box-sizing: border-box;
+
+    .slogan{
+        font-family: "Lato", serif;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+
+
+
+// Navigation Bar
+
+.ignoreText{
+    display: inline-block;
+    width: 0;
+}
+// Mobile 
+nav {
+    padding: 0 15px;
+    border-top: $plifeOrange solid 2px;
+    border-bottom: $plifeOrange solid 2px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: "Lato", serif;
+    font-size: 18px;
+}
+.navMenu, .navDropdown{
+    list-style-type: none;
+}
+.navMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 5px;
+    }
+    li.subitem a{
+        padding: 20px;
+    }
+    .navToggle{
+        order: 1;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: 25px;
+    }
+    .navItem.hasDropdown a{
+        svg {
+            margin: 0 5px;
+        }
+    }
+    .navDropdown.navDropdown-active {
+        display: block;
+    }
+    .navDropdown{
+        background: $plifeSub;
+        border-radius: 3px;
+    }
+    .subitem a{
+        padding: 10px 15px;
+    }
+}
+.navItem{
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+    text-align: center;
+    padding: 10px;
+    a:hover{
+        background: $plifeHover;
+    }
+}
+.navMenu.active .navItem{
+    display: block;
+}
+
+
+.navDropdown{
+    display: none;
+}
+.navItem{
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+
+
+
+// End Navbar 
+
+
+
+.splashImage{
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.careersSplash{
+    width: 100%;
+    background-size: cover;
+
+    .splashWrapper{
+        margin: auto auto;
+        margin-left: 5%;
+
+    }
+}
+
+
+.splashWrapper{
+    width: 800px;
+    margin: auto auto;
+    margin-right: 5%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.splashTextWrapper{
+    background: rgba($plifeBlack, 0.65);
+}
+
+.splashTextMain, .splashTextSub{
+    padding: 18px;
+}
+
+.splashTextMain{
+    color: white;
+    font-family: "Lato", serif;
+    font-size: 38px;
+}
+.splashTextSub{
+    font-size: 28px;
+    color: white;
+    font-family: "Lato", serif;
+    font-weight: normal;
+}
+.splashButton{
+    cursor: pointer;
+    font-family: "Lato", serif;
+    font-size: 28px;
+    color: white;
+    background: rgba($plifeBlack, 1);
+    align-self: flex-start;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-weight: bold;
+    i{
+        font-size: 32px;
+    }
+    &:hover{
+        background: rgba( darken($plifeBlack, 10), 1);
+    }
+}
+.splashScrollPrompt{
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 4%;
+    color: white;
+    font-size: 48px;
+    background: rgba($plifeBlack, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        top: -10px;
+        background: rgba( darken($plifeBlack, 10), 1);
+       
+    }
+}
+
+.pageWrapper{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.textSection{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    padding: 8px;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Lato", serif;
+    font-size: 22px;
+
+    width: 90%;
+    margin: 64px auto;
+
+    box-sizing: border-box;
+    border-radius: 4px;
+    ul{
+        list-style-position: inside;
+        margin: 16px 0;
+        li{
+            margin: 12px auto;
+        }
+    }
+
+    .centeredText{
+        margin: 12px auto;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: "Lato", serif;
+        font-size: 22px;
+    }
+    .splashButton{
+        margin: 40px auto;
+    }
+}
+.serviceCards{
+    width: 100%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .serviceCard{
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+  
+
+        .serviceTitle{
+            font-family: "Lato", serif;
+            font-size: 32px;
+            color: $plifeOrange;
+            text-align: center;
+        }
+        .serviceText{
+            width: 70%;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+    }
+
+}
+
+.sectionTitleWrapper{
+    margin: 40px auto;
+    margin-bottom: 12px;
+    h1{
+        
+        font-family: "Lato", serif;
+        font-size: 46px;
+        color: $plifeOrange;
+    }
+}
+
+.primeLink {
+    color: $plifeOrange;
+    text-decoration: none;
+    border-bottom: 4px solid $plifeBlack;
+    transition: all 0.2s;
+    &:hover{
+        color: $plifeBlack;
+    }
+}
+
+.postWrapper{
+    display: flex;
+}
+
+.postWrapperLong{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.smallPost{
+    &:nth-child(2){
+        border-top: solid 2px $plifeBlack;
+        border-bottom: solid 2px $plifeBlack;
+    }
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    margin: 6px 0;
+
+    .postTitle{
+
+        font-size: 32px;
+        font-family: "Lato";
+        color: $plifeOrange;
+        font-weight: bold;
+    }
+    .postDate{
+        padding: 6px 0;
+    }
+    .postContent{
+        padding: 6px 0;
+    }
+    .postButton{
+        margin: 0 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+// .smallPost {
+//     width: 400px;
+//     transition: all 0.2s;
+//     position: relative;
+//     margin: 100px auto;
+//     box-shadow: 3px 3px 8px 3px rgba(84,76,76,.2);
+//     padding: 10px;
+//     box-sizing: border-box;
+//     display: flex;
+//     flex-direction: column;
+//     border-radius: 4px;
+//     top: 0px;
+//     cursor: pointer;
+    
+//     .postInformation{
+//         display: flex;
+//         flex-direction: column;
+//     }
+//     .postTitle{
+//         margin: 12px auto;
+//         margin-bottom: 6px;
+//         color: $plifeOrange;
+//         font-family: "Lato";
+//         font-size: 28px;
+//     }
+//     .postDate{
+//         color: $plifeBlack;
+//         font-size: 20px;
+//         margin: 6px auto;
+//     }
+//     .postContent{
+//         margin: 20px auto;
+//         padding: 3px;
+//         box-sizing: border-box;
+//         font-size: 20px;
+//     }
+//     .postSep{
+//         width: 98%;
+//         margin: 2px auto;
+//         border-radius: 20px;
+//         background-color: rgba(black, 0.2);
+//         height: 3px;
+//     }
+//     &:hover{
+//         top: -10px;
+//     }
+// }
+
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: $plifeBlack;
+}
+
+
+
+
+
+
+
+
+
+@media all and(max-width: 960px){
+    .splashWrapper{
+        width: 420px;
+    }
+    .serviceCards{
+        margin: 12px auto;
+    }
+    .serviceCard{
+        margin: 40px auto;
+    }
+}
+
+
+@media all and ( min-width: 960px ){
+    nav{
+        .navToggle{
+            display: none;
+        }
+
+
+        .navMenu{
+            align-items: flex-start;
+            justify-content: start;
+            flex-wrap: nowrap;
+            background: none;
+        }
+        .navItem{
+            width: auto;
+            order: 1;
+            position: relative;
+            display: block !important;
+           
+        }
+        .navDropdown-active {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 68px;
+            background: #111;
+        }
+
+    }
+
+
+}

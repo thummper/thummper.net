@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CycleGAN Training</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+            .w3-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 100%;
+        }
+    
+    
+    </style>
+</head>
+
+<body>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Apply Makeup')">Apply Makeup</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Remove Makeup')">Remove Makeup</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Testing Model')">Testing Model</button>
+     
+    </div>
+
+
+    <div id="Apply Makeup" class="w3-container w3-border city">
+        <h2>CycleGAN Apply Makeup Training</h2>
+        <img src="./applyMakeup/0.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/1.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/2.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/3.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/4.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/5.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/6.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/7.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/8.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/9.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/10.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/11.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/12.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/13.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/14.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/15.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/16.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/17.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/18.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/19.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/20.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/21.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/22.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/23.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/24.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/25.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/26.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/27.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/28.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/29.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/30.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/31.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/32.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/33.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/34.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/35.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/36.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/37.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/38.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/39.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/40.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/41.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/42.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/43.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/44.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/45.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/46.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/47.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/48.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/49.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/50.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/51.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/52.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/53.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/54.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/55.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/56.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/57.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/58.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/59.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/60.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/61.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/62.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/63.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/64.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/65.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/66.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/67.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/68.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/69.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/70.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/71.jpg" style="padding: 15px;">
+        <img src="./applyMakeup/72.jpg" style="padding: 15px;">
+    </div>
+
+    <div id="Remove Makeup" class="w3-container w3-border city">
+        <h2>CycleGAN Remove Makeup Training</h2>
+        <img src="./removeMakeup/0.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/1.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/2.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/3.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/4.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/5.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/6.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/7.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/8.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/9.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/10.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/11.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/12.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/13.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/14.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/15.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/16.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/17.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/18.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/19.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/20.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/21.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/22.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/23.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/24.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/25.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/26.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/27.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/28.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/29.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/30.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/31.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/32.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/33.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/34.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/35.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/36.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/37.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/38.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/39.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/40.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/41.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/42.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/43.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/44.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/45.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/46.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/47.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/48.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/49.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/50.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/51.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/52.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/53.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/54.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/55.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/56.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/57.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/58.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/59.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/60.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/61.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/62.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/63.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/64.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/65.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/66.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/67.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/68.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/69.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/70.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/71.jpg" style="padding: 15px;">
+        <img src="./removeMakeup/72.jpg" style="padding: 15px;">
+
+    </div>
+
+    <div id="Testing Model" class="w3-container w3-border city">
+            <h2> Testing Model </h2>
+            <img src="./testing/0.jpg" style="padding: 15px;">
+            <img src="./testing/1.jpg" style="padding: 15px;">
+            <img src="./testing/2.jpg" style="padding: 15px;">
+            <img src="./testing/3.jpg" style="padding: 15px;">
+            <img src="./testing/4.jpg" style="padding: 15px;">
+            <img src="./testing/5.jpg" style="padding: 15px;">
+            <img src="./testing/6.jpg" style="padding: 15px;">
+            <img src="./testing/7.jpg" style="padding: 15px;">
+            <img src="./testing/8.jpg" style="padding: 15px;">
+            <img src="./testing/9.jpg" style="padding: 15px;">
+            <img src="./testing/10.jpg" style="padding: 15px;">
+            <img src="./testing/11.jpg" style="padding: 15px;">
+            <img src="./testing/12.jpg" style="padding: 15px;">
+            <img src="./testing/13.jpg" style="padding: 15px;">
+            <img src="./testing/14.jpg" style="padding: 15px;">
+            <img src="./testing/15.jpg" style="padding: 15px;">
+            <img src="./testing/16.jpg" style="padding: 15px;">
+            <img src="./testing/17.jpg" style="padding: 15px;">
+            <img src="./testing/18.jpg" style="padding: 15px;">
+            <img src="./testing/19.jpg" style="padding: 15px;">
+            <img src="./testing/20.jpg" style="padding: 15px;">
+
+        </div>
+
+  
+ 
+
+
+
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(cityName).style.display = "flex";
+            evt.currentTarget.className += " w3-red";
+        }
+    </script>
+</body>
+
+</html>

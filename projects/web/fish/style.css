@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.wrapper {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: auto ;
+    grid-template-rows: 30px 170px 1fr 20px;
+}
+
+nav {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    width: 100%;
+    height: 30px;
+    background-color: #5382E8;
+    position: fixed;
+    transition: border 0.5s;
+    border-bottom: 1px solid transparent;
+    z-index: 1000;
+}
+
+.scrolling {
+    border-bottom: 2px solid blue;
+}
+
+header {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    background-color: #8293FF;
+
+}
+
+
+
+.navWrapper {
+    width: 100%;
+    height: 30px;
+}
+
+main {
+    grid-row: 3/4;
+    grid-column: 1/4;
+/*    background-color: #e6e9ff;*/
+    margin-top: 20px;
+}
+
+footer {
+    grid-row: 4/5;
+    grid-column: 1/4;
+    background-color: #8fadf0;
+}
+.logoWrapper {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    height: 200px;
+}
+.koiLogo {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+.navWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    min-width: 160px;
+    margin-top: 6px;
+    padding: 5px 0;
+    background-color: #5382E8;
+    transition: visibility 0s, opacity 0.1s linear;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 10;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 10px;
+    
+}
+.dropdown-content a:hover {
+    background-color: #8293FF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.navItem {
+    margin: 0 15px;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 3px;
+    transition: linear 0.1s;
+}
+
+.navItem:hover {
+    background-color: #8293FF;
+}
+
+.navItem a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+header {
+   
+}
+
+header .logoWrapper h1 {
+    font-family: "Hind";
+    font-size: 35px;
+    color: white;
+    width:200px;
+    height: 80px;
+    line-height: 110px;
+    margin-left: -70px;
+}
+
+.sepTest {
+    
+    margin-top: -50px;
+    
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border-top: solid 5px #5382E8;
+}
+.introText {
+    margin-top: 40px; 
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#highlight{ 
+    background: #d2def9;
+}
+.reviews img {
+    width: 500px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+.reviews {
+    width: 90%;
+    
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+#reviewTitle {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+}
+.reviewBG {
+    width: 200px;
+    height: 50px;
+    background-color: #8293FF;
+    margin: 0 auto;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+.reviewText {
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+

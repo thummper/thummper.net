@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thummper Admin</title>
+    <link rel="stylesheet" href="admin_style.css">
+    <script>
+        window.onload = function() {
+            console.log("Sending AJAX");
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    //Fires when responce is recieved. 
+                    console.log("RESPONCE: \n" + this.responseText);
+                    document.getElementById("main").innerHTML += this.responseText;
+                }
+            }
+            ajax.open("GET", "admin_functions.php", true);
+            ajax.send();
+        }
+    </script>
+</head>
+<body>
+    <header></header>
+    <main id="main"></main>
+    <footer></footer>
+</body>
+</html>

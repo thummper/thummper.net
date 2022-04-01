@@ -1,0 +1,121 @@
+
+        * {
+            margin: 0;
+            border: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            min-height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 1fr 30px; 
+        }
+        header {
+            grid-row: 1/2;
+            display: flex;
+            flex-direction: column;
+            background-color: 	#FFEFD5;
+        }
+        .headerWrapper {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+        .mainHeader {
+            padding-top: 20px;
+            height: 50px;
+            font-size: 30px;
+            font-weight: bold
+        }
+        .subHeader {
+            width: 60%;
+            margin: 0 auto;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-around;
+        }
+.subHeader span {
+    margin-right: 30px;
+}
+   
+        main {
+            grid-row: 2/3;
+            
+        }
+        footer {
+            grid-row: 3/4;
+            
+            background-color: 	white;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        .contentWrapper {
+            padding-top: 25px;
+        }
+        .content, .preface{ 
+            width: 90%;
+            padding-bottom: 50px;
+            text-align: center;
+            margin: 0 auto;}
+        .preface {
+            margin-top: 50px;
+            
+        }
+        .underline {
+            height: 3px;
+            background-color: orange;
+        }
+        .title {
+            text-align: left;
+            font-size: 20px;
+        }
+        .contentBody {
+            font-size: 17px;
+            padding-top: 14px;
+            padding-left: 7px;
+            text-align: left;
+        }
+        .qualTitle {
+            font-weight: bold;
+        }
+        .qualBody {
+            padding-top: 3px;
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
+.skillContainer {
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skillTitle {
+    font-weight: bold;
+    padding: 10px;
+}
+.skillDescription {
+    margin: 10px 0;
+}
+.rating {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+.circle, .fCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+.fCircle {
+    background-color: orange;
+}
+   

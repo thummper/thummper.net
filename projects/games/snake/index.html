@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title> Snake Game </title>
+	<meta name="description" content="A simple JS snake game." />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts-en.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<meta name="author" content="Aron" />
+	<script src="main.js"></script>
+	<script src="food.js"></script>
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<div class="controls">
+			WASD / Arrows for movement.
+			<br>
+			P to pause / resume.
+			<br>
+			R to reset game.
+		</div>
+		<div class="tabs-wrapper">
+			<div class="tabs">
+				<div class="tab-button active" data-tab="gameTab"> Game </div>
+				<div class="tab-button" data-tab="statsTab" > Statistics </div>
+
+			</div>
+			<div class="tab-holder">
+				<div class="tab canvas-wrapper" id="gameTab">
+					<div class="score-holder">Score: 0</div>
+					<div class="menu main">
+						<div class="menu-bg"></div>
+						<div class="title"> Snake </div>
+						<div class="main-controls">
+							<div class="difficulty">Medium</div>
+							<input class="diff-slider" type="range" min="0" max="100" value="50" />
+							<div class="main-button start"> Start </div>
+						</div>
+					</div>
+					<div class="menu paused">
+						<div class="menu-bg"></div>
+						<div class="title"> Paused </div>
+					</div>
+					<div class="menu over">
+						<div class="menu-bg"></div>
+						<div class="title"> Game Over </div>
+						<div class="main-button reset"> Restart </div>
+					</div>
+					<canvas id="scanvas"></canvas>
+				</div>
+				<div class="tab stats-wrapper" id="statsTab">
+					<div class="title">
+						Statistics
+					</div>
+					<div class="chart-wrapper">
+						<div id="score-time-chart"></div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: darkred;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns:  1fr;
+    /* | 40 PX | AUTO | 40 PX | */
+    grid-template-rows: 50px 1fr 25px;
+    /*
+    -----------------------------
+                200px
+    
+    -----------------------------
+    
+                AUTO
+    -----------------------------
+    */
+    min-height: 100vh;
+}
+
+.headerRow {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: darkred;
+    font-family: "Lobster";
+}
+
+.heading {
+    color:white;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+.mainRow {
+    
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: white;
+    font-family: "Cabin";
+}
+
+.footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: indianred;
+}
+
+
+
+.timerMain {
+    font-size: 64px;
+    display: block;
+    width: 200px;
+    height: 75px;
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.buttons button {
+    font-family: "Cabin";
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border-radius: 15%;
+    background-color: darkred;
+    color: white;
+    transition: 0.2s;
+}
+
+.buttons button:hover {
+    background-color: indianred;
+    border: solid 2px darkred;
+}
+.blockHolder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.blk {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: orange;
+    visibility: hidden;
+    
+}
